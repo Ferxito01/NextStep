@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NextStep | Registrarse</title>
+
+    <meta
+      name="description"
+      content="Regístrate en NextStep para encontrar oportunidades de becas y apoyos para la educación superior."
+    />
+
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="header">
+      <div class="contenedor header-contenido">
+
+        <a class="marca" href="index.html">
+          <img
+            src="images/logo.jpg"
+            alt="Logo de NextStep"
+            class="marca-logo"
+          />
+
+          <img
+            src="images/titulo.jpg"
+            alt="NextStep"
+            class="marca-titulo"
+          />
+        </a>
+
+        <nav class="menu">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#becas">Becas</a>
+          <a href="index.html#nosotros">Nosotros</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- ===== REGISTRO ===== -->
+    <main>
+      <section class="registro">
+
+        <div class="contenedor contenedor-registro">
+
+          <div class="tarjeta-registro">
+
+            <div class="registro-encabezado">
+
+              <img
+                src="images/logo.jpg"
+                alt="Logo de NextStep"
+                class="registro-logo"
+              />
+
+              <h1>Crear cuenta</h1>
+
+              <p>
+                Completa tus datos para crear tu cuenta en NextStep y conocer
+                las oportunidades de becas disponibles.
+              </p>
+
+            </div>
+
+            <!-- ===== FORMULARIO ===== -->
+            <form
+              class="formulario-registro"
+              action="PantallazoConfirmacion.html"
+              method="get"
+            >
+
+              <!-- ===== DATOS PERSONALES ===== -->
+              <h2>Datos personales</h2>
+
+              <div class="form-grid">
+
+                <div class="campo">
+                  <label for="nombre">Nombre completo</label>
+
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    placeholder="Ej: Juan Pérez"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="tipo-documento">Tipo de documento</label>
+
+                  <select
+                    id="tipo-documento"
+                    name="tipo-documento"
+                    required
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="cc">Cédula de ciudadanía</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cédula de extranjería</option>
+                  </select>
+                </div>
+
+                <div class="campo">
+                  <label for="documento">Número de documento</label>
+
+                  <input
+                    id="documento"
+                    name="documento"
+                    type="text"
+                    placeholder="Número de documento"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="fecha-nacimiento">
+                    Fecha de nacimiento
+                  </label>
+
+                  <input
+                    id="fecha-nacimiento"
+                    name="fecha-nacimiento"
+                    type="date"
+                    required
+                  />
+                </div>
+
+              </div>
+
+
+              <!-- ===== UBICACIÓN ===== -->
+              <h2>Ubicación</h2>
+
+              <div class="form-grid">
+
+                <div class="campo">
+                  <label for="departamento">Departamento</label>
+
+                  <select
+                    id="departamento"
+                    name="departamento"
+                    required
+                  >
+                    <option value="">
+                      Selecciona tu departamento
+                    </option>
+
+                    <option value="antioquia">Antioquia</option>
+                    <option value="atlantico">Atlántico</option>
+                    <option value="bogota">Bogotá D.C.</option>
+                    <option value="bolivar">Bolívar</option>
+                    <option value="boyaca">Boyacá</option>
+                    <option value="caldas">Caldas</option>
+                    <option value="cauca">Cauca</option>
+                    <option value="cundinamarca">Cundinamarca</option>
+                    <option value="nariño">Nariño</option>
+                    <option value="norte-santander">
+                      Norte de Santander
+                    </option>
+                    <option value="quindio">Quindío</option>
+                    <option value="risaralda">Risaralda</option>
+                    <option value="santander">Santander</option>
+                    <option value="tolima">Tolima</option>
+                    <option value="valle">Valle del Cauca</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div class="campo">
+                  <label for="ciudad">Ciudad o municipio</label>
+
+                  <input
+                    id="ciudad"
+                    name="ciudad"
+                    type="text"
+                    placeholder="Ej: Medellín"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="barrio">Barrio</label>
+
+                  <input
+                    id="barrio"
+                    name="barrio"
+                    type="text"
+                    placeholder="Nombre del barrio"
+                    required
+                  />
+                </div>
+
+                <div class="campo campo-completo">
+                  <label for="direccion">Dirección</label>
+
+                  <input
+                    id="direccion"
+                    name="direccion"
+                    type="text"
+                    placeholder="Ej: Calle 10 # 20-30"
+                    required
+                  />
+                </div>
+
+              </div>
+
+
+              <!-- ===== DATOS DE CONTACTO ===== -->
+              <h2>Datos de contacto</h2>
+
+              <div class="form-grid">
+
+                <div class="campo">
+                  <label for="telefono">
+                    Número de teléfono
+                  </label>
+
+                  <input
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    placeholder="Ej: 3001234567"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="correo">
+                    Correo electrónico
+                  </label>
+
+                  <input
+                    id="correo"
+                    name="correo"
+                    type="email"
+                    placeholder="tucorreo@ejemplo.com"
+                    required
+                  />
+                </div>
+
+              </div>
+
+
+              <!-- ===== INFORMACIÓN ACADÉMICA ===== -->
+              <h2>Información académica</h2>
+
+              <div class="form-grid">
+
+                <div class="campo campo-completo">
+                  <label for="institucion">
+                    Institución educativa
+                  </label>
+
+                  <input
+                    id="institucion"
+                    name="institucion"
+                    type="text"
+                    placeholder="Nombre de tu institución educativa"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="grado">
+                    Último grado cursado
+                  </label>
+
+                  <select
+                    id="grado"
+                    name="grado"
+                    required
+                  >
+                    <option value="">
+                      Selecciona una opción
+                    </option>
+
+                    <option value="9">Noveno</option>
+                    <option value="10">Décimo</option>
+                    <option value="11">Undécimo</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="tecnologo">Tecnólogo</option>
+                    <option value="universitario">
+                      Universitario
+                    </option>
+                  </select>
+                </div>
+
+                <div class="campo">
+                  <label for="graduacion">
+                    Año de graduación
+                  </label>
+
+                  <input
+                    id="graduacion"
+                    name="graduacion"
+                    type="number"
+                    min="2000"
+                    max="2100"
+                    placeholder="Ej: 2026"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="promedio">
+                    Promedio académico
+                  </label>
+
+                  <input
+                    id="promedio"
+                    name="promedio"
+                    type="number"
+                    min="0"
+                    max="5"
+                    step="0.01"
+                    placeholder="Ej: 4.2"
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="estrato">
+                    Estrato socioeconómico
+                  </label>
+
+                  <select
+                    id="estrato"
+                    name="estrato"
+                    required
+                  >
+                    <option value="">
+                      Selecciona una opción
+                    </option>
+
+                    <option value="1">Estrato 1</option>
+                    <option value="2">Estrato 2</option>
+                    <option value="3">Estrato 3</option>
+                    <option value="4">Estrato 4</option>
+                    <option value="5">Estrato 5</option>
+                    <option value="6">Estrato 6</option>
+                  </select>
+                </div>
+
+              </div>
+
+
+              <!-- ===== DATOS DE ACCESO ===== -->
+              <h2>Datos de acceso</h2>
+
+              <div class="form-grid">
+
+                <div class="campo">
+                  <label for="contrasena">
+                    Contraseña
+                  </label>
+
+                  <input
+                    id="contrasena"
+                    name="contrasena"
+                    type="password"
+                    placeholder="Crea una contraseña"
+                    minlength="8"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="confirmar-contrasena">
+                    Confirmar contraseña
+                  </label>
+
+                  <input
+                    id="confirmar-contrasena"
+                    name="confirmar-contrasena"
+                    type="password"
+                    placeholder="Repite tu contraseña"
+                    minlength="8"
+                    required
+                  />
+                </div>
+
+              </div>
+
+
+              <!-- ===== TÉRMINOS ===== -->
+              <div class="registro-terminos">
+
+                <label class="checkbox">
+
+                  <input
+                    type="checkbox"
+                    name="terminos"
+                    required
+                  />
+
+                  <span>
+                    Acepto los términos y condiciones y autorizo el uso de
+                    mis datos para el funcionamiento de NextStep.
+                  </span>
+
+                </label>
+
+              </div>
+
+
+              <!-- ===== BOTÓN ===== -->
+              <button
+                type="submit"
+                class="boton boton-registro-final"
+              >
+                Crear mi cuenta
+              </button>
+
+
+              <!-- ===== VOLVER A INICIAR SESIÓN ===== -->
+              <p class="registro-login">
+                ¿Ya tienes una cuenta?
+                <a href="inicios.html">
+                  Inicia sesión
+                </a>
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+      <div class="contenedor">
+
+        <p>
+          NextStep — Información de becas para nuestra comunidad educativa.
+        </p>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
